@@ -5,7 +5,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Retail Dashboard", layout="wide")
 
-df = pd.read_csv("D:/AI WORKSHOP/TASK/RETAIL_TRANSACTIONS/Retail_Transactions_2000.csv")
+df = pd.read_csv("Retail_Transactions_2000.csv")
 
 df["PurchaseDate"] = pd.to_datetime(df["PurchaseDate"], errors="coerce")
 df["DayOfWeek"] = df["PurchaseDate"].dt.day_name()
